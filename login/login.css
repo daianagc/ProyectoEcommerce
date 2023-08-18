@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+    --main-color: #292f4f;
+    --tex-color: #171427;
+    --bg-color: #e9d3dd;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: rgb(12, 0, 0);
+}
+
+h2{
+    color: #fafafa;
+    
+}
+
+a{
+    color: #0818c2;
+    font-size: 16px;
+    text-decoration: underline;
+    
+
+}
+
+
+.navbar__container {
+    background: var(--main-color);;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 46px;
+    padding: 0px 30px 0px 30px;
+    margin: 0 auto;
+    z-index: 999;
+    box-shadow: 0 1px 4px hsl(0, 5%, 20%);
+}
+
+.navbar__logo {
+  width: 50px;
+  margin-top: 10px;
+}
+
+main {
+  max-width: 1200px;
+  height: 75vh;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  gap: 50px;
+}
+
+.content__text h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.content__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text__btns {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 1rem;
+  background-color: #252525;
+}
+
+.login__btn {
+  background-color: #781e1e;
+}
+
+.login__btn span {
+  background: linear-gradient(90deg, #88487d, #ff005c);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.register__btn {
+  background: linear-gradient(90deg, #000000, #ff005c);
+  color: rgb(31, 171, 199);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__nav__link {
+  color: white;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__text {
+  padding-top: 40px;
+}
+
+.footer__text--strong {
+  font-weight: 800;
+}
+
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    height: 95vh;
+    padding: 0px 30px 0px 30px;
+  }
+  
+  .form__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+  
+  .form__title {
+    margin-bottom: 30px;
+  }
+  
+  .form__input {
+    padding: 15px 35px 15px 15px;
+    border-radius: 8px;
+    background: var(--main-color);
+    color: rgb(245, 239, 239);
+    outline: none;
+    border: none;
+    width: 350px;
+  }
+  
+  .form__submit__btn {
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(120, 85, 234);
+    padding: 10px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-out 0s;
+    font-weight: 600;
+    color: #fafafa;
+    background-color: var(--main-color) ;
+    transition: all 0.2s ease-in;
+    margin-top: 10px;
+  }
+  
+  /* Error / Success */
+  .form__field.error input {
+    border: 1px solid #1b1314;
+  }
+  
+  .form__field small {
+    color: #dc3545;
+    max-width: 350px;
+    text-align: center;
+    padding: 7px 0;
+  }
+  
+  .form__field.success input {
+    border: 1px solid #28a745;
+  }
+  

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIRIUM ClOTHES</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login/login.html">
+    <link
+    rel="icon"
+    type=""
+    href="./Sin título.png"
+  />
+    <!-- ICons -->
+
+</head>
+<body>
+    <header>
+        <h2>LIRIUM CLOTHES</h2>
+        <nav class="navbar">
+            <div class="menu-label">
+              <img src="./menu/menu.png" alt="" class="menu-icon" />
+            </div>
+      
+            <ul class="navbar-list">
+              <li>
+                <a href="#products">Productos</a>
+              </li>
+              <li>
+                <a href="./login/login.html">Cuenta</a>
+              </li>
+            </ul>
+      
+            <div class="cart-label">
+              
+                <img src="./img-cart/cart-icon.svg" alt="" class="cart-icon">
+                <div class="count-products">
+                  <span id="contador-productos">0</span>
+                </div>
+            </div>
+      
+          <div class="cart">
+              <h2>Tus Productos</h2>
+      
+              <div class="cart-container"></div>
+      
+              <span class="divider"></span>
+      
+              <div class="cart-total">
+                <p>Total:</p>
+                <span class="total">$ 0.00</span>
+              </div>
+              <button class="btn-buy">Comprar</button>
+              <button class="btn-delete">Vaciar carrito</button>
+            </div>
+      
+            <div class="overlay"></div>  
+          </nav>
+</header>
+ <!-- SLIDER-->
+ <div class="slider-frame">
+  <ul>
+      <li><img src="./img-slider/img1.jpg" alt=""></li>
+      <li><img src="./img-slider/img2.jpg" alt=""></li>
+      <li><img src="./img-slider/img3.jpg" alt=""></li>
+      <li><img src="./img-slider/img4.jpg" alt=""></li>
+  </ul>
+</div>
+  
+</section>
+   <h2 class="section-title">SHOP PRODUCTS</h2>
+     <!-- products -->
+     <section id="products">
+             <!-- CATEGORIAS -->
+             <div class="categories">
+             <button class="category active">TODOS</button>
+             <button class="category" data-category="REMERAS">REMERAS</button>
+             <button class="category" data-category="PANTALONES">PANTALONES</button>
+             <button class="category" data-category="ABRIGOS">ABRIGOS</button>
+            </div>
+     
+    </div>
+    <div class="shop-content"></div>
+        <button class="btn-load">Ver Más</button>
+      
+
+  <footer>
+  <p>&copy; <span>LIRIUM CLOTHES 2023</span></p>
+  </footer>
+  <div class="add-modal"></div>
+
+ <script src="./data.js"></script>
+ <script src="./main.js"></script>
+</body>
+</html>
